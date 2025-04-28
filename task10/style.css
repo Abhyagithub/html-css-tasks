@@ -1,0 +1,58 @@
+/* First Layout */
+.layout-one {
+  display: flex;
+  align-items: center;
+  width: 700px;
+  height: 250px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.left-section {
+  flex: 1;
+  position: relative;
+  background: white;
+}
+
+.left-section img {
+  width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left center; 
+}
+
+.title {
+  posi  tion: fixed;
+  align-content: center;
+  font-size: 10px;
+  color: gray;
+}
+
+.right-section {
+  width: 200px;
+  background-color: #00BFFF; /* Light Blue */
+  height: 100%;
+}
+
+/* Second Layout */
+.layout-two {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 700px;
+}
+
+.grid-item {
+  background-color: #ccc;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

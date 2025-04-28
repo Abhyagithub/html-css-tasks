@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table </title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+            vertical-align: middle;
+            text-align: center;
+            height: 50px;
+        }
+        .green-bar {
+            background-color: #556B2F; /* Olive Green */
+            height: 50px;
+        }
+        .blue-bar {
+            background-color: #1C2F5E; /* Dark Blue */
+            height: 50px;
+        }
+        .content img {
+            width: 250px;
+            height: 200px;
+
+        }
+        .side {
+            width: 20%;
+        }
+        .main-content {
+            width: 60%;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td rowspan="2"></td>
+        <td>
+            <table style="width:100%; border-collapse: collapse;">
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+                <tr><td></td></tr>
+            </table>
+        </td>
+        <td rowspan="2"></td>
+    </tr>
+    <tr></tr>
+</table>
+
+<table>
+    <tr>
+        <td class="green-bar" colspan="3"></td>
+    </tr>
+    <tr>
+        <td class="side"></td>
+        <td class="main-content content">
+            <img src="ldog.jpg" alt="dog">
+        </td>
+        <td class="side"></td>
+    </tr>
+    <tr>
+        <td class="blue-bar" colspan="3"></td>
+    </tr>
+</table>
+
+</body>
+</html>
